@@ -14,14 +14,39 @@ class Chatbook:
             User:""")
         
         if user_input.lower() == "1":
-            pass
+            self.signup()
         elif user_input.lower() == "2":
-            pass
+            self.singin()
         elif user_input.lower() == "3":
             pass
         elif user_input.lower() == "4":
             pass
         else:
             exit()
+
+    def signup(self):
+        email = input("enter your email:")
+        passwrd = input("enter your password:")
+        self.username = email
+        self.password = passwrd
+        print("You have signed up successfully\n")
+        self.menu()
+    
+    def singin(self):
+        if self.username=="" and self.password=="":
+            print("Please sing up first")
+        else:
+            usrname = input("enter your email:")
+            pwd = input("enter your password:")
+            if self.username == usrname and self.password == pwd:
+                print("you have singed in successfully")
+                self.loggedin = True
+            else:
+                print("Please input correct credentials")
+        
+        print("\n")
+        self.menu()
+
+
 
 obj = Chatbook()
