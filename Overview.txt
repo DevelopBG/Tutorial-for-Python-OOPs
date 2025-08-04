@@ -8,3 +8,8 @@
     > code reusability
     >debugging
     > easy to colab. 
+
+5. Example of a class ( Chatbook)
+    > encpasulation.
+    > getter and setter.
+    > static method.
