@@ -18,3 +18,10 @@
     > encpasulation.
     > getter and setter.
     > static method.
+    > inheritance
+        >code Example
+        > why inheritance is required? ( code reusability, parent has no access to child clss)
+        > what gets inherited? ( constructor, non private attribute, non private method)
+        > constructor overloading and method overloading
+        > super keyword ( can be used only inside class, cannot access variables/attributes, used only child class)
+        > typer of inheritanc - single|multilevel|Hierchical|Multiple(diamond problem)|hybrid
