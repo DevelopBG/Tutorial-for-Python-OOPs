@@ -1,9 +1,31 @@
 class Chatbook:
+
+    #static vaiable
+    __user_id = 0 
+
     def __init__(self):
+        self.id = Chatbook.__user_id # static id cannot be accessed by self, only by class itself. 
+        Chatbook.__user_id += 1
+        self.__name= "default name"
         self.username = ''
         self.password =''
         self.loggedin = False
-        self.menu()
+        # self.menu()
+
+    def get_name(self): # getter method
+        return self.__name
+    def set_name(self, value):# setter method
+        self.__name = value
+        return self.__name
+    
+    @staticmethod
+    def get_id():
+        return Chatbook.__user_id
+    @staticmethod
+    def set_id(val):
+        Chatbook.__user_id = val
+        return Chatbook.__user_id
+
     def menu(self):
         user_input = input("""Welcome to chatbook!how would you like to proceed?
             1. Press 1 for singup
@@ -67,4 +89,18 @@ class Chatbook:
 
 
 
-obj = Chatbook()
+if __name__ == "__main__":
+
+    user1 = Chatbook()
+    print(user1.id)
+    # print(user1._Chatbook__name)
+
+    # user2= Chatbook()
+    # print(user2.id)
+    # user3= Chatbook()
+    # print(user3.id)
+
+    # static method is directly accessed from the class directly.
+    Chatbook.set_id(10)
+    user2 = Chatbook()
+    print(user2.id)

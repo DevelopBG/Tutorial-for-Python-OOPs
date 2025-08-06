@@ -10,6 +10,11 @@
     > easy to colab. 
 
 5. Example of a class ( Chatbook)
+    > function vs method
+    > magic method or dunder method
+    > "self"
+    > we can create attribute outside of the class as well. 
+    
     > encpasulation.
     > getter and setter.
     > static method.

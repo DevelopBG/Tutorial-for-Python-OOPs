@@ -15,3 +15,11 @@ destination = 'europe'
 travel_plan = sam.travel(destination)
 # print(sam.salary)
 print(type(sam))
+
+
+
+
+# here we are defining the attribute outside of the class
+sam.id = 123
+
+
